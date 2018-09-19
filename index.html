@@ -9,19 +9,25 @@
 </head>
 <body>
     <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-3 text-center">Totally Trivial Trivia</h1>
-            <h4 class="text-center" id="time-left">Timer here: 00</h4>
+        <div class="jumbotron mt-5">
+            <h1 class="display-3 text-center">Corporate America Test</h1>
             <hr class="my-2">
+            <h4 class="text-center" id="countdown">Countdown: <span id="time-left"></span></h4>
             <div class="d-none" id="display-answer">
-                <h4 class="text-center" id="answer"></h4>
+                <h4 class="text-center my-2" id="answer"></h4>
             </div>
             <div id="display-question">
-                <h4 class="lead text-center my-3" id="question">The questions would go here.</h6>      
-                <button type="button" class="btn btn-primary btn-lg btn-block option" id="option-one">Block level button</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block option" id="option-two">Block level button</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block option" id="option-three">Block level button</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block option" id="option-four">Block level button</button>
+                <h4 class="lead text-center my-3" id="question"></h6>      
+                <button type="button" class="btn btn-primary btn-lg btn-block option" id="option-one"></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block option" id="option-two"></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block option" id="option-three"></button>
+                <button type="button" class="btn btn-primary btn-lg btn-block option" id="option-four"></button>
+            </div>
+            <div class="d-none" id="display-results">
+                <p class="text-center" id="result-correct"></p>
+                <p class="text-center" id="result-incorrect"></p>
+                <p class="text-center" id="result-unanswered"></p>
+                <button class="btn btn-primary btn-md btn-block my-2" id="reset">Reset</button>
             </div>
         </div>
     </div>
